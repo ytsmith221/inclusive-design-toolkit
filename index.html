@@ -7,7 +7,7 @@
 <meta name="description" content="A lightweight AI skillset that builds inclusive design thinking into the moment you frame a problem or write a spec — not into an audit after it's built.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="sty[...]
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#1B2430;
@@ -31,7 +31,7 @@
   }
   body{
     margin:0;
-    background-color:#F7F7F3; /* solid background color */
+    background-color:#F7F7F3;
     color:var(--ink);
     font-family:'IBM Plex Sans', system-ui, sans-serif;
     line-height:1.6;
@@ -206,101 +206,6 @@
   .tag-learn{background:#EFE7F5; color:#6B4E8E;}
   .mode-card p{font-size:15px; color:var(--ink-soft);}
 
-  /* ---- toggle demo: signature interactive element ---- */
-  .demo{
-    margin-top:56px;
-    background:var(--ink);
-    border-radius:10px;
-    padding:36px;
-    color:var(--paper);
-  }
-  .demo-head{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:16px;
-    margin-bottom:24px;
-  }
-  .demo-head h3{color:var(--paper); font-size:19px; margin:0;}
-  .toggle-group{
-    display:inline-flex;
-    background:rgba(255,255,255,0.08);
-    border-radius:24px;
-    padding:4px;
-  }
-  .toggle-btn{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
-    padding:9px 16px;
-    border-radius:20px;
-    border:none;
-    background:transparent;
-    color:rgba(247,247,243,0.65);
-    cursor:pointer;
-  }
-  .toggle-btn[aria-pressed="true"]{
-    background:var(--paper);
-    color:var(--ink);
-  }
-  .demo-panel{display:none;}
-  .demo-panel.active{display:block;}
-  .demo-line{
-    font-family:'IBM Plex Serif', serif;
-    font-size:17px;
-    line-height:1.7;
-    background:rgba(255,255,255,0.05);
-    border-radius:6px;
-    padding:18px 20px;
-    margin-bottom:14px;
-  }
-  .flag-list{
-    list-style:none;
-    margin:14px 0 0 0;
-    padding:0;
-  }
-  .flag-list li{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:13px;
-    color:#F0B4AC;
-    padding:8px 12px;
-    background:rgba(193,72,60,0.18);
-    border-radius:4px;
-    margin-bottom:8px;
-  }
-  .demo-note{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
-    color:rgba(247,247,243,0.55);
-    margin-top:18px;
-  }
-  .demo-note.good{color:var(--sage);}
-
-  /* ---- where it fits ---- */
-  .fits h2{font-size:clamp(26px,3.6vw,36px); max-width:20ch;}
-  .fits .lede{font-size:18px; color:var(--ink-soft); max-width:62ch;}
-  .use-cases{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:22px;
-    margin-top:40px;
-  }
-  .use-case{
-    padding:26px 22px;
-    border:1px solid var(--line);
-    border-radius:6px;
-    background:#fff;
-  }
-  .use-case .num{
-    font-family:'IBM Plex Mono', monospace;
-    color:var(--amber-deep);
-    font-size:13px;
-    margin-bottom:12px;
-    display:block;
-  }
-  .use-case p{font-size:15px; color:var(--ink-soft); margin:0;}
-  .use-case strong{color:var(--ink); font-weight:600;}
-
   /* ---- get it ---- */
   .get-grid{
     display:grid;
@@ -337,27 +242,6 @@
   }
   .file-list a:hover{text-decoration:underline;}
 
-  /* ---- credibility ---- */
-  .credibility .wrap{max-width:760px;}
-  .credibility h2{font-size:clamp(24px,3.2vw,32px);}
-  .credibility p{font-size:16px; color:var(--ink-soft);}
-  .credibility .lede{
-    font-family:'IBM Plex Serif', serif;
-    font-style:italic;
-    font-size:20px;
-    color:var(--ink);
-  }
-  .placeholder-flag{
-    margin-top:24px;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    color:var(--amber-deep);
-    border:1px dashed var(--amber);
-    padding:10px 14px;
-    border-radius:4px;
-    display:inline-block;
-  }
-
   footer{
     padding:48px 0;
     text-align:center;
@@ -372,7 +256,6 @@
     .hero .wrap{grid-template-columns:1fr; gap:32px;}
     .hero-side{border-left:none; border-top:2px solid var(--amber); padding-left:0; padding-top:18px;}
     .modes{grid-template-columns:1fr;}
-    .use-cases{grid-template-columns:1fr;}
     .get-grid{grid-template-columns:1fr;}
     section{padding:64px 0;}
   }
@@ -386,7 +269,6 @@
     <nav>
       <a href="#problem">Why</a>
       <a href="#how">How it works</a>
-      <a href="#fits">Where it fits</a>
       <a href="#get">Get it</a>
     </nav>
   </div>
@@ -414,9 +296,9 @@
   <div class="wrap">
     <p class="eyebrow">The problem</p>
     <h2>Inclusion gets treated as a cost center. So it's the first thing cut.</h2>
-    <p class="lede">It lives with a specialist. It shows up as a checklist after the design is done, or a ticket filed after the sprint is scoped. That's what makes it feel like a tax — and it'[...]</p>
-    <p>The fix isn't a bigger checklist or a later-stage audit. It's moving the same thinking to the point where a different word choice costs nothing — while the problem is still being framed,[...]</p>
-    <div class="stat-line">Most "inclusive design" tools review work that's already finished. That makes them a left-shifted auditor — earlier, but still an audit. This kit is built to never pr[...]</div>
+    <p class="lede">It lives with a specialist. It shows up as a checklist after the design is done, or a ticket filed after the sprint is scoped. That's what makes it feel like a tax — and it's the first thing cut when priorities shift.</p>
+    <p>The fix isn't a bigger checklist or a later-stage audit. It's moving the same thinking to the point where a different word choice costs nothing — while the problem is still being framed, or the requirement is still being written.</p>
+    <div class="stat-line">Most "inclusive design" tools review work that's already finished. That makes them a left-shifted auditor — earlier, but still an audit. This kit is built to move the thinking to the moment of creation instead.</div>
   </div>
 </section>
 
@@ -430,61 +312,12 @@
       <div class="mode-card">
         <span class="mode-tag tag-create">Create mode</span>
         <h3>Co-drafts the work you're already doing</h3>
-        <p>You're writing a problem statement, a PRD, a user story. This mode drafts alongside you — asking the questions that surface exclusion <em>while</em> a sentence is being written, so t[...]
+        <p>You're writing a problem statement, a PRD, a user story. This mode drafts alongside you — asking the questions that surface exclusion <em>while</em> a sentence is being written, so the thinking is integrated before you hit save.</p>
       </div>
       <div class="mode-card">
         <span class="mode-tag tag-learn">Learn mode</span>
         <h3>Explore the field, or find what nobody's building</h3>
         <p>No task, no deadline — just exploring inclusive design as a discipline, or using a real constraint as a generative prompt to surface opportunities nobody's addressing yet.</p>
-      </div>
-    </div>
-
-    <div class="demo">
-      <div class="demo-head">
-        <h3>See the actual difference</h3>
-        <div class="toggle-group" role="group" aria-label="Compare approaches">
-          <button class="toggle-btn" id="btn-audit" aria-pressed="false">Audit approach</button>
-          <button class="toggle-btn" id="btn-integrated" aria-pressed="true">Integrated approach</button>
-        </div>
-      </div>
-
-      <div class="demo-panel" id="panel-audit">
-        <div class="demo-line">"Users can reset their password by clicking the link in their confirmation email."</div>
-        <ul class="flag-list">
-          <li>⚑ Missing: what if the user can't access email (shared device, no account)?</li>
-          <li>⚑ Missing: is this readable at 200% zoom or with a screen reader?</li>
-          <li>⚑ Missing: what's the fallback for someone without reliable email access?</li>
-        </ul>
-        <p class="demo-note">Flagged after the fact. The draft has to be reopened, the flags re-prioritized against everything else in the sprint — this is the pattern that turns inclusion into[...]</p>
-      </div>
-
-      <div class="demo-panel active" id="panel-integrated">
-        <div class="demo-line">"Users can reset their password via a link sent to their confirmation email, or via a phone-verified code for accounts without reliable email access — both paths [...]
-        <p class="demo-note good">Written this way the first time. Nothing to flag, nothing to reopen — the requirement was already complete.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="ramp" aria-hidden="true"></div>
-
-<section class="fits" id="fits">
-  <div class="wrap">
-    <p class="eyebrow">Where it fits</p>
-    <h2>Wherever product decisions get made.</h2>
-    <p class="lede">Not a tool for one role on the team. Anywhere a problem gets framed, a requirement gets written, or a flow gets reviewed, this fits into the drafting itself.</p>
-    <div class="use-cases">
-      <div class="use-case">
-        <span class="num">01</span>
-        <p><strong>Drafting the first version of a problem statement</strong> — before a roadmap or research plan gets built on top of it.</p>
-      </div>
-      <div class="use-case">
-        <span class="num">02</span>
-        <p><strong>Writing acceptance criteria before a sprint starts</strong> — so "done" already includes it, instead of a ticket competing for priority later.</p>
-      </div>
-      <div class="use-case">
-        <span class="num">03</span>
-        <p><strong>Reviewing a flow before it ships</strong> — catching what a specific, real constraint would break, while there's still time to change it cheaply.</p>
       </div>
     </div>
   </div>
@@ -496,6 +329,7 @@
   <div class="wrap">
     <p class="eyebrow">Get it</p>
     <h2>Two ways to use it. Both free.</h2>
+    <p class="lede">Use it wherever product decisions get made — drafting a problem statement, writing acceptance criteria, or reviewing a flow. Works inside Claude as a skill, or as a copy-paste prompt in any AI tool you already use.</p>
     <div class="get-grid">
       <div class="get-card">
         <h3>In Claude</h3>
@@ -527,34 +361,13 @@
 
 <div class="ramp" aria-hidden="true"></div>
 
-
-  <footer>
+<footer>
   <div class="wrap">
     <p>The Inclusive Design Kit — v0.3 · Learn / Create modes shipped · Five modules live</p>
   </div>
 </footer>
 
 <script>
-  const btnAudit = document.getElementById('btn-audit');
-  const btnIntegrated = document.getElementById('btn-integrated');
-  const panelAudit = document.getElementById('panel-audit');
-  const panelIntegrated = document.getElementById('panel-integrated');
-
-  function showAudit(){
-    btnAudit.setAttribute('aria-pressed','true');
-    btnIntegrated.setAttribute('aria-pressed','false');
-    panelAudit.classList.add('active');
-    panelIntegrated.classList.remove('active');
-  }
-  function showIntegrated(){
-    btnIntegrated.setAttribute('aria-pressed','true');
-    btnAudit.setAttribute('aria-pressed','false');
-    panelIntegrated.classList.add('active');
-    panelAudit.classList.remove('active');
-  }
-  btnAudit.addEventListener('click', showAudit);
-  btnIntegrated.addEventListener('click', showIntegrated);
-
   // Feedback form — builds a pre-filled mailto link, no backend/third party involved
   const FEEDBACK_EMAIL = "REPLACE_WITH_YOUR_EMAIL@example.com";
   const feedbackForm = document.getElementById('feedback-form');
