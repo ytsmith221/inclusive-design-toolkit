@@ -138,6 +138,15 @@
     font-size:18px;
     color:var(--ink-soft);
     max-width:52ch;
+    margin-bottom:24px;
+  }
+  .hero .context{
+    font-size:15px;
+    color:var(--ink-soft);
+    padding:20px 24px;
+    background:var(--flag-soft);
+    border-left:3px solid var(--flag);
+    margin-bottom:24px;
   }
   .hero-side{
     border-left:2px solid var(--amber);
@@ -164,19 +173,6 @@
   .btn-primary:hover{background:var(--ink-soft);}
   .btn-ghost{background:transparent; color:var(--ink); border-color:var(--line);}
   .btn-ghost:hover{border-color:var(--ink);}
-
-  /* ---- problem ---- */
-  .problem .wrap{max-width:760px;}
-  .problem h2{font-size:clamp(26px,3.6vw,36px);}
-  .problem .lede{font-size:19px; color:var(--ink-soft);}
-  .stat-line{
-    margin-top:32px;
-    padding:20px 24px;
-    background:var(--flag-soft);
-    border-left:3px solid var(--flag);
-    font-size:15px;
-    color:var(--ink-soft);
-  }
 
   /* ---- how it works ---- */
   .modes{
@@ -267,7 +263,6 @@
   <div class="wrap">
     <div class="logo">inclusive<span>/</span>design<span>/</span>kit</div>
     <nav>
-      <a href="#problem">Why</a>
       <a href="#how">How it works</a>
       <a href="#get">Get it</a>
     </nav>
@@ -279,26 +274,17 @@
     <div>
       <h1>Inclusion isn't a review step.<br>It's how you write <em>the first draft.</em></h1>
       <p class="sub">A lightweight AI skillset that builds inclusive design thinking into the moment you frame a problem or write a spec — not into an audit after it's already built.</p>
+      <div class="context">
+        <strong>The problem:</strong> Inclusion typically gets treated as a cost center, living with specialists and showing up as a checklist after design is done. This kit moves that thinking to where it matters — while the problem is still being framed.
+      </div>
       <div class="cta-row">
-        <a href="#get" class="btn btn-primary">Get the kit</a>
         <a href="#how" class="btn btn-ghost">See how it works</a>
+        <a href="#get" class="btn btn-primary">Get the kit</a>
       </div>
     </div>
     <div class="hero-side">
       <p>Works inside Claude as a skill, or as a copy-paste prompt in any AI tool — ChatGPT, Copilot, wherever you already draft.</p>
     </div>
-  </div>
-</section>
-
-<div class="ramp" aria-hidden="true"></div>
-
-<section class="problem" id="problem">
-  <div class="wrap">
-    <p class="eyebrow">The problem</p>
-    <h2>Inclusion gets treated as a cost center. So it's the first thing cut.</h2>
-    <p class="lede">It lives with a specialist. It shows up as a checklist after the design is done, or a ticket filed after the sprint is scoped. That's what makes it feel like a tax — and it's the first thing cut when priorities shift.</p>
-    <p>The fix isn't a bigger checklist or a later-stage audit. It's moving the same thinking to the point where a different word choice costs nothing — while the problem is still being framed, or the requirement is still being written.</p>
-    <div class="stat-line">Most "inclusive design" tools review work that's already finished. That makes them a left-shifted auditor — earlier, but still an audit. This kit is built to move the thinking to the moment of creation instead.</div>
   </div>
 </section>
 
@@ -312,7 +298,7 @@
       <div class="mode-card">
         <span class="mode-tag tag-create">Create mode</span>
         <h3>Co-drafts the work you're already doing</h3>
-        <p>You're writing a problem statement, a PRD, a user story. This mode drafts alongside you — asking the questions that surface exclusion <em>while</em> a sentence is being written, so the thinking is integrated before you hit save.</p>
+        <p>You're writing a problem statement, a PRD, a user story. This mode drafts alongside you — asking the questions that surface exclusion <em>while</em> a sentence is being written, so the thinking shifts upstream.</p>
       </div>
       <div class="mode-card">
         <span class="mode-tag tag-learn">Learn mode</span>
@@ -329,7 +315,7 @@
   <div class="wrap">
     <p class="eyebrow">Get it</p>
     <h2>Two ways to use it. Both free.</h2>
-    <p class="lede">Use it wherever product decisions get made — drafting a problem statement, writing acceptance criteria, or reviewing a flow. Works inside Claude as a skill, or as a copy-paste prompt in any AI tool you already use.</p>
+    <p class="lede">Use it wherever product decisions get made — drafting a problem statement, writing acceptance criteria, or reviewing a flow. Works inside Claude as a skill, or as a copy-paste prompt in any AI tool.</p>
     <div class="get-grid">
       <div class="get-card">
         <h3>In Claude</h3>
