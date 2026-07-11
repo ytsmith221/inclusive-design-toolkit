@@ -7,7 +7,7 @@
 <meta name="description" content="A lightweight AI skillset that builds inclusive design thinking into the moment you frame a problem or write a spec — not into an audit after it's built.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="sty[...]
 <style>
   :root{
     --ink:#1B2430;
@@ -31,7 +31,7 @@
   }
   body{
     margin:0;
-    background:var(--paper);
+    background-color:#F7F7F3; /* solid background color */
     color:var(--ink);
     font-family:'IBM Plex Sans', system-ui, sans-serif;
     line-height:1.6;
@@ -387,7 +387,6 @@
       <a href="#problem">Why</a>
       <a href="#how">How it works</a>
       <a href="#fits">Where it fits</a>
-      <a href="#community">Community</a>
       <a href="#get">Get it</a>
     </nav>
   </div>
@@ -401,7 +400,6 @@
       <div class="cta-row">
         <a href="#get" class="btn btn-primary">Get the kit</a>
         <a href="#how" class="btn btn-ghost">See how it works</a>
-        <button id="share-btn" class="btn btn-ghost" type="button" style="cursor:pointer;">Share ↗</button>
       </div>
     </div>
     <div class="hero-side">
@@ -416,9 +414,9 @@
   <div class="wrap">
     <p class="eyebrow">The problem</p>
     <h2>Inclusion gets treated as a cost center. So it's the first thing cut.</h2>
-    <p class="lede">It lives with a specialist. It shows up as a checklist after the design is done, or a ticket filed after the sprint is scoped. That's what makes it feel like a tax — and it's exactly why, when priorities tighten, this work is so often the first line item to go.</p>
-    <p>The fix isn't a bigger checklist or a later-stage audit. It's moving the same thinking to the point where a different word choice costs nothing — while the problem is still being framed, while the spec is still being written. Applied there, it isn't compliance. It's just better product thinking, on time.</p>
-    <div class="stat-line">Most "inclusive design" tools review work that's already finished. That makes them a left-shifted auditor — earlier, but still an audit. This kit is built to never produce a finished draft plus a separate list of what's missing.</div>
+    <p class="lede">It lives with a specialist. It shows up as a checklist after the design is done, or a ticket filed after the sprint is scoped. That's what makes it feel like a tax — and it'[...]</p>
+    <p>The fix isn't a bigger checklist or a later-stage audit. It's moving the same thinking to the point where a different word choice costs nothing — while the problem is still being framed,[...]</p>
+    <div class="stat-line">Most "inclusive design" tools review work that's already finished. That makes them a left-shifted auditor — earlier, but still an audit. This kit is built to never pr[...]</div>
   </div>
 </section>
 
@@ -432,7 +430,7 @@
       <div class="mode-card">
         <span class="mode-tag tag-create">Create mode</span>
         <h3>Co-drafts the work you're already doing</h3>
-        <p>You're writing a problem statement, a PRD, a user story. This mode drafts alongside you — asking the questions that surface exclusion <em>while</em> a sentence is being written, so the inclusion lens ends up inside the sentence, not attached after it.</p>
+        <p>You're writing a problem statement, a PRD, a user story. This mode drafts alongside you — asking the questions that surface exclusion <em>while</em> a sentence is being written, so t[...]
       </div>
       <div class="mode-card">
         <span class="mode-tag tag-learn">Learn mode</span>
@@ -457,11 +455,11 @@
           <li>⚑ Missing: is this readable at 200% zoom or with a screen reader?</li>
           <li>⚑ Missing: what's the fallback for someone without reliable email access?</li>
         </ul>
-        <p class="demo-note">Flagged after the fact. The draft has to be reopened, the flags re-prioritized against everything else in the sprint — this is the pattern that turns inclusion into a tax.</p>
+        <p class="demo-note">Flagged after the fact. The draft has to be reopened, the flags re-prioritized against everything else in the sprint — this is the pattern that turns inclusion into[...]</p>
       </div>
 
       <div class="demo-panel active" id="panel-integrated">
-        <div class="demo-line">"Users can reset their password via a link sent to their confirmation email, or via a phone-verified code for accounts without reliable email access — both paths readable at 200% zoom and compatible with screen readers."</div>
+        <div class="demo-line">"Users can reset their password via a link sent to their confirmation email, or via a phone-verified code for accounts without reliable email access — both paths [...]
         <p class="demo-note good">Written this way the first time. Nothing to flag, nothing to reopen — the requirement was already complete.</p>
       </div>
     </div>
@@ -529,62 +527,8 @@
 
 <div class="ramp" aria-hidden="true"></div>
 
-<section id="community">
-  <div class="wrap">
-    <p class="eyebrow">Community & feedback</p>
-    <h2>Built with the people this affects most — not just about them.</h2>
-    <p class="lede" style="font-size:18px; color:var(--ink-soft); max-width:62ch;">This kit takes feedback from everyone who touches it — practitioners, builders, and the leaders who prioritize this work. But one group gets the loudest microphone, on purpose.</p>
 
-    <div style="margin-top:32px; background:var(--sage-soft); border-left:4px solid var(--sage); border-radius:6px; padding:28px 30px;">
-      <p style="font-family:'IBM Plex Mono', monospace; font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--sage); margin-bottom:10px;">Centered, not consulted</p>
-      <p style="font-size:17px; color:var(--ink); margin-bottom:6px;"><strong>People from communities centered in inclusive design</strong> — the people this work is actually for.</p>
-      <p style="font-size:15px; color:var(--ink-soft); margin-bottom:0;">Every other stakeholder here — SMEs, product builders, decision-makers — is building for or alongside this group. Their feedback doesn't get averaged in with everyone else's; it gets a dedicated channel, and it shapes the roadmap first. If something in this kit only looks helpful but doesn't hold up against real lived experience, this is the group whose word overrides everyone else's.</p>
-    </div>
-
-    <div class="get-grid" style="margin-top:28px;">
-      <div class="get-card">
-        <h3>Share feedback</h3>
-        <p>A short form, right here — no third-party service, nothing stored anywhere but your inbox. Tell me how you're engaging so the reply starts in the right place.</p>
-        <form id="feedback-form" style="margin-top:6px;">
-          <label for="fb-persona" style="font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); display:block; margin-bottom:6px;">I'm engaging as...</label>
-          <select id="fb-persona" required style="width:100%; padding:11px 12px; margin-bottom:14px; border:1px solid var(--line); border-radius:4px; font-family:'IBM Plex Sans', sans-serif; font-size:14px; background:#fff; color:var(--ink);">
-            <option value="">Choose one</option>
-            <option value="SME / practitioner">Accessibility or inclusive design SME / practitioner</option>
-            <option value="Product builder">Product builder (IC → exec)</option>
-            <option value="Decision-maker">Decision-maker who owns risk or prioritization</option>
-            <option value="Community member — centered">Someone from a community centered in inclusive design</option>
-          </select>
-          <label for="fb-message" style="font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); display:block; margin-bottom:6px;">Your feedback</label>
-          <textarea id="fb-message" required rows="4" placeholder="What's working, what's not, what's missing..." style="width:100%; padding:11px 12px; margin-bottom:14px; border:1px solid var(--line); border-radius:4px; font-family:'IBM Plex Sans', sans-serif; font-size:14px; resize:vertical;"></textarea>
-          <button type="submit" class="btn btn-primary" style="width:100%; text-align:center; border:none; cursor:pointer;">Send feedback →</button>
-          <p id="fb-note" style="font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--ink-soft); margin-top:10px; margin-bottom:0;">Opens your email client, pre-filled. Nothing is sent or stored until you hit send there.</p>
-        </form>
-      </div>
-      <div class="get-card">
-        <h3>Build log</h3>
-        <p>What changed, and why — tied to real feedback wherever possible. This is the trail, not a highlight reel.</p>
-        <ul class="file-list">
-          <li>v0.3 — Added standalone design-critique module <span style="color:var(--ink-soft); font-size:11px;">Jul 2026</span></li>
-          <li>v0.2 — Shifted Create mode from review to co-drafting <span style="color:var(--ink-soft); font-size:11px;">Jul 2026</span></li>
-          <li>v0.1 — Orchestrator + two core modules shipped <span style="color:var(--ink-soft); font-size:11px;">Jul 2026</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="ramp" aria-hidden="true"></div>
-
-
-  <div class="wrap">
-    <p class="eyebrow">Why this exists</p>
-    <p class="lede">Built by a product leader with hands-on experience and subject-matter depth in inclusive product design — not a framework applied from the outside.</p>
-    <p>I've been on teams where, when priorities tighten, this work is the first thing cut — not because it lacks value, but because it isn't the obvious line to revenue. I think that's backwards. The impact is real, and it compounds. This kit is one way to make the work harder to cut: build it into the fabric of how a spec gets written, not into a program that has to be re-funded every year.</p>
-    <span class="placeholder-flag">Placeholder copy — refine before publishing</span>
-  </div>
-</section>
-
-<footer>
+  <footer>
   <div class="wrap">
     <p>The Inclusive Design Kit — v0.3 · Learn / Create modes shipped · Five modules live</p>
   </div>
@@ -610,26 +554,6 @@
   }
   btnAudit.addEventListener('click', showAudit);
   btnIntegrated.addEventListener('click', showIntegrated);
-
-  // Share button — uses the native share sheet on mobile (includes work email, Slack, etc.);
-  // falls back to a pre-filled email on desktop browsers without Web Share support
-  const shareBtn = document.getElementById('share-btn');
-  if (shareBtn) {
-    shareBtn.addEventListener('click', async function(){
-      const shareData = {
-        title: 'The Inclusive Design Kit',
-        text: 'Build inclusion into your product work as you draft it — not as a review after. A free, lightweight AI skillset for problem framing and spec writing.',
-        url: window.location.href
-      };
-      if (navigator.share) {
-        try { await navigator.share(shareData); } catch (err) { /* user cancelled — no-op */ }
-      } else {
-        const subject = encodeURIComponent(shareData.title);
-        const body = encodeURIComponent(shareData.text + '\n\n' + shareData.url);
-        window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
-      }
-    });
-  }
 
   // Feedback form — builds a pre-filled mailto link, no backend/third party involved
   const FEEDBACK_EMAIL = "REPLACE_WITH_YOUR_EMAIL@example.com";
